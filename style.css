@@ -1,0 +1,175 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header (topo) */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    background-color: #1679eb;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu .pn {
+    font-weight: bold;
+    margin-left: 10px;
+    color: white;
+}
+
+/* Título principal */
+h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+/* Container principal (organiza propagandas + conteúdo) */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Estilos para as propagandas laterais */
+.ads {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Caixa de notícia */
+.news {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: black; /* Garante que o texto da notícia seja legível */
+}
+.news h1 {
+    color: black; /* Garante que o título fique visível */
+    font-size: 22px; /* Ajusta o tamanho da fonte */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 15px; /* Dá um espaço abaixo do título */
+    font-weight: bold; /* Deixa o título mais destacado */
+}
+
+
+.news img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Faz o footer sempre ficar na parte inferior da página */
+html, body {
+    height: 100%; /* Garante que a página ocupe toda a altura */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Faz o conteúdo ocupar o espaço disponível, empurrando o footer para baixo */
+}
+
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Evita sobreposição do conteúdo */
+    bottom: 0;
+}
+
+
+/* Botões de compartilhamento */
+.share-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.share-buttons a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.share-buttons .whatsapp {
+    background: #25D366;
+}
+
+.share-buttons .facebook {
+    background: #1877F2;
+}
+
+.share-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* Responsividade: Ajusta layout para telas menores */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ads {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
